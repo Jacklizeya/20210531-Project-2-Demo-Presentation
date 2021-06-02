@@ -278,11 +278,11 @@ a {
 
 
 
-.logo {
-
-	margin-top: 1rem;
-
+.project {
+  margin-top: 1rem;
   font-family: verdana;
+  text-transform: uppercase;
+  padding-left: 15px;
 }
 
 .main-nav {
@@ -299,9 +299,6 @@ a {
 .main-nav a {
 	padding: 10px 15px;
 	text-transform: uppercase;
-  text-decoration: none;
-	/* text-align: center;
-	display: block; */
   font-family: verdana;
 }
 
@@ -311,10 +308,16 @@ a {
   
 }
 
-.main-nav a:hover {
-	color: #d61195;
+.main-nav a:hover 
+{
+	background-color: #90e7d9;
 }
-
+a:visited {
+	background-color: #90e7d9;
+}
+/* .main-na a:visited {
+  background-color: #90e7d9;
+} */
 
 
 .header {
