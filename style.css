@@ -1,0 +1,196 @@
+/* The navigation bar */
+html { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(white, grey);
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(198, 247, 184);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+
+p {
+  margin-top: 50px; /* Add a top margin to avoid content overlay */
+  margin-bottom: 10px;
+}
+
+/* once I click,div {
+  border: 5px solid red;
+} it will move to the top */
+
+a:visited {
+  color: blue;
+}
+h2{
+  margin-bottom: 2rem;
+}
+.box{
+  background: linear-gradient(#474787,#6f6faa);
+  font-family: 'Hind', sans-serif;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+/* background: #aea3a3; */
+box-shadow:  20px 20px 60px #948b8b,
+             -20px -20px 60px #c8bbbb;
+             margin-top: 3rem;
+}
+.box img{
+  /* width: auto;
+  height: auto; */
+  transition: all 0.4s ease-in-out;
+}
+.box:hover img{
+  opacity: 0;
+  transform: perspective(700px) rotateX(180deg);
+}
+.box .box-content{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+  transform: translateY(50%);
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  transition: all 0.45s ease 0s;
+}
+.box .title{
+  background-color: rgba(255,255,255,0.3);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 5px 1px;
+  margin: 0 0 7px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.25s linear;
+}
+.box .post{
+  background-color: rgba(255,255,255,0.3);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  padding: 1px 10px 0;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: all 0.25s linear;
+}
+.box:hover .title,
+.box:hover .post{
+  opacity: 1;
+  transform: translateY(0);
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transition: all 0.25s linear;
+}
+.box:hover .icon{ opacity: 1; }
+.box .icon li{
+  margin: 0 2px;
+  display: inline-block;
+}
+.box .icon li a{
+  color: #555;
+  background: #fff;
+  font-size: 36px;
+  text-align: center;
+  line-height: 40px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.box .icon li a:hover{ text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4); }
+@media only screen and (max-width:990px){
+  .box{ margin: 0 0 30px; }
+}
+.teamImg{
+border-radius: 48px;
+background: #aea3a3;
+box-shadow:  22px -22px 13px #968c8c,
+             -22px 22px 13px #c6baba;
+             margin-top: 5rem;
+}
+
+.text-effect{
+  color: #4b7645;
+  font-family: 'Viga', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  animation: 2s anime ease-out infinite;
+  margin-top: 5rem;
+}
+
+@keyframes anime{
+  0%{ transform: scale3d(1, 1, 1); }
+  10%,20%{
+      color: #4b7645;
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,50%,70%,90%{
+      color: blue;
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,60%,80%{
+      color: purple;
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100%{ transform: scale3d(1, 1, 1); }
+}
+@media only screen and (max-width: 990px){
+  .text-effect{ font-size: 90px; }
+}
+@media only screen and (max-width: 767px){
+  .text-effect{ font-size: 70px; }
+}
+@media only screen and (max-width: 576px){
+  .text-effect{ font-size: 55px; }
+}
+@media only screen and (max-width: 479px){
+  .text-effect{
+      font-size: 40px;
+      line-height: 50px;
+  }
+}
