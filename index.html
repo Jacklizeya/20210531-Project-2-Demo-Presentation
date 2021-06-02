@@ -8,21 +8,27 @@
   <script src="index.js"></script>
 </head>
 
-<body>
-  <nav class="navbar">
-    <a onclick='changecolor("link1")' id="link1" href="#1"> Intro </a>
-    <a onclick='changecolor("link2")' id="link2" href="#2"> The Problem and Solution </a>
-    <a onclick='changecolor("link3")' id="link3" href="#3"> Jack </a>
-    <a onclick='changecolor("link4")' id="link4" href="#4"> Chuong </a>
-    <a onclick='changecolor("link5")' id="link5" href="#5"> Kseniia </a>
-    <a onclick='changecolor("link6")' id="link6" href="#6"> Chris </a>
-    <a onclick='changecolor("link7")' id="link7" href="#7"> The Technology </a>
-  </nav>
+<header class="header">
+  <h3 class="logo"><a href="#">Project 2</a></h3>
+  <ul class="main-nav">
+    <!-- <li><a href="#1">Intro</a></li> -->
+    <li><a href="#2">Problem & Solution</a></li>
+    <li><a href="#3">Jack</a></li>
+    <li><a href="#4">Chuong</a></li>
+    <li><a href="#5">Kseniia</a></li>
+    <li><a href="#6">Chris</a></li>
+    <li><a href="#7">Technology</a></li>
+  </ul>
+</header>
 
+<body>
   <div class="main">
     <div id="1">
-      <h1> COHORT 6 - PROJECT 2</h1>
-      <h2>E-Commerce + 3D Printing</h2>
+      <h1 class='titleText'> COHORT 6 - PROJECT 2</h1>
+      <div class="typeEff">
+        <h2>E-Commerce: a solution for 3D Printing market</h2>
+      </div>
+
       <div class="box">
         <img src="3Dmarket.png" style="width: 750px">
         <div class="box-content">
@@ -60,16 +66,21 @@
         <H3>JACK LI</H3>
       </span>
     </div>
-      <p> 2007-2011 Bachelor of Petroleum Engineering, China University of Petroleum Beijing </p>
-      <p> 2011-2014 Master of Petroleum Engineering, University of Regina, Saskatchewan </p>
-      <p> 2014 Sep to 2021 Jan, Phoenix Technology Service && Schlumberger in oilfields </p>
-
+    <div>
+      <ul>
+        <li> 2007-2011 Bachelor of Petroleum Engineering, China University of Petroleum Beijing </li>
+        <li> 2011-2014 Master of Petroleum Engineering, University of Regina, Saskatchewan </li>
+        <li> 2014 Sep to 2021 Jan, Phoenix Technology Service && Schlumberger in oilfields </li>
+      </ul>
+    </div>
     <img class="teamImg" src="Agora.JPG" style="width: 750px">
   </div>
 
   <div id="4">
     <div class="text-effect">
-      <span>CHUONG TANG</span>
+      <span>
+        <H3>CHUONG</H3>
+      </span>
     </div>
 
     <ul>
@@ -81,22 +92,30 @@
   </div>
 
   <div id="5">
-    <p> <br /> </p>
-    <p> Kseniia </p>
-    <ul>
-      <li>I’m adaptable, organized, courageous agilist with analytical and problem-solving view, who is a great
-        team-player, and work well independently.</li>
-      <li>I achieved Diploma in Software Development, Computer Science, Computer Programming & Automatic Systems at the
+    <div class="text-effect">
+      <span>
+        <H3>KSENIIA</H3>
+      </span>
+    </div>
+
+    <ul style="max-width: 800px;">
+      <li> I’m adaptable, organized, courageous agilist with analytical and problem-solving view, who is a great
+        team-player, and work well independently. </li>
+      <li> I achieved Diploma in Software Development, Computer Science, Computer Programming & Automatic Systems at the
         age of 19 years old by accomplishing 4 years college program in Ukraine.</li>
-      <li>I’m returning to the Development world from telecommunication industry.</li>
+      <li> I’m returning to the Development world from telecommunication industry.</li>
     </ul>
     <img class="teamImg" src="Kseniia.jpg" style="width: 750px">
+  </div>
   </div>
 
 
   <div id="6">
-    <p> <br /> </p>
-    <p> Chris </p>
+    <div class="text-effect">
+      <span>
+        <H3>CHIRS</H3>
+      </span>
+    </div>
     <ul>
       <li> Cost Accountant transitioning to Full Stack Deveolper </li>
       <li> </li>
@@ -108,14 +127,13 @@
 
 
   <div id="7">
-    <p> <br /> </p>
-    <h1> The technology </h1>
+    <h1 class="techSec"> The technology </h1>
     <ul>
       <li> Redux for state management </li>
       <li> Bootstrap for UI </li>
 
     </ul>
-    <img src="./technology.png" style="width: 750px">
+    <img class="teamImg" src="./technology.png" style="width: 750px">
 
     <a href="https://threed2021store.herokuapp.com/" target="_blank" style="text-align: center;">
       <h1> Start Demo </h1>

@@ -150,7 +150,8 @@ border-radius: 48px;
 background: #aea3a3;
 box-shadow:  22px -22px 13px #968c8c,
              -22px 22px 13px #c6baba;
-             margin-top: 5rem;
+margin-top: 2rem;
+margin-bottom: 5rem;
 }
 
 .text-effect{
@@ -160,7 +161,7 @@ box-shadow:  22px -22px 13px #968c8c,
   text-align: center;
   letter-spacing: 2px;
   animation: 2s anime ease-out infinite;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 @keyframes anime{
@@ -193,4 +194,171 @@ box-shadow:  22px -22px 13px #968c8c,
       font-size: 40px;
       line-height: 50px;
   }
+}
+.typeEff h2 {
+  color: rgb(36, 23, 23);
+  font-family: 'Indie Flower', cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.techSec{
+  color: rgba(0, 0, 0, 0.1);
+  font-family: 'Solway', serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 50px transparent;
+  animation: animate 1s alternate infinite;
+}
+@keyframes animate{
+  100%{ text-shadow: 0 0 0px #071774; }
+}
+@media only screen and (max-width: 990px){
+  .text-effect{ font-size: 100px; }
+}
+@media only screen and (max-width: 767px){
+  .text-effect{ font-size: 80px; }
+}
+@media only screen and (max-width: 479px){
+  .text-effect{ font-size: 60px; }
+}
+@media only screen and (max-width: 359px){
+  .text-effect{ font-size: 45px; }
+}
+.titleText{
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: verdana;
+  color: #eaf5f5;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/*  Navbar sec */
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+
+	margin-top: 1rem;
+
+  font-family: verdana;
+}
+
+.main-nav {
+	margin-top: 5px;
+  list-style-type: none;
+
+}
+.logo ul {
+	text-decoration: none;
+ 
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+  text-decoration: none;
+	/* text-align: center;
+	display: block; */
+  font-family: verdana;
+}
+
+.main-nav a {
+	color: #14181d;
+	font-size: .99em;
+  
+}
+
+.main-nav a:hover {
+	color: #d61195;
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0.5rem;
+  z-index: 9999;
+  padding-top: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 }
